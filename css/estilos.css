@@ -1,0 +1,493 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300;1,400&family=Nunito+Sans:wght@300&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    font-family:'Nunito Sans', sans-serif;
+}
+
+header{
+    /* position: fixed; */
+    padding: 5px 0px;
+    width: 100%;
+    /* border: red 2px solid; */
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color:#484848;
+    z-index: 1000;
+    
+}
+
+header .dato{
+    /* border: red 2px solid; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+    justify-content: space-between;
+}
+
+@media(max-width:600px) {
+    header .dato {
+        width: 50%;
+        justify-content: center;
+    }
+    header .logo {
+        display: flex;
+        width: 50%;
+        justify-content: center;
+    }
+}
+
+header .dato a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+@media(max-width: 600px) {
+    header .dato a {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+header .lenguaje{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width: 600px) {
+    header .lenguaje{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+header .lenguaje .idioma{
+    padding-left: 8px;
+    color:white;
+}
+ 
+.bannerCompleto{
+    width: 100%;
+}
+/* banner completo */
+.bannerCompleto .banner img{
+    background:#C2C2C2;
+    height: 500px;/* 546 */
+    object-fit: cover;
+}
+
+@media(max-width: 600px) {
+    .bannerCompleto .banner img {
+        height: 200px;
+        object-fit: cover;
+    }
+}
+
+.bannerCompleto .banner{
+    /* border: red 2px solid; */
+    display: flex;
+    /* background: url(../img/Rectangle\ 18.png); */
+    width: 100%;
+    position: relative;
+    z-index: 999;
+}
+
+.bannerCompleto .banner .texto{
+    
+    position: absolute;
+    display: flex;
+    z-index: 10001;
+    bottom: 0;
+    justify-content: center;
+    height: 100%; 
+    align-items: flex-start;
+    flex-direction: column;
+    width: 40%;
+    transform: translate(120px);
+}
+
+.bannerCompleto .banner .texto h1{
+    font-family:Lato;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 52px;
+    color: white;
+}
+@media(max-width: 600px) {  
+    .bannerCompleto .banner .texto {
+        transform: translate(10%);
+        width: 90%;
+    }
+
+    .bannerCompleto .banner .texto h1 {
+        font-size: 20px;
+        line-height: 23px;
+    }
+}
+
+.bannerCompleto .banner .texto p{
+    padding: 12px 0px;
+    font-family:Lato;
+    font-style: normal;
+    font-size: 24px;
+    color: white;
+}
+@media(max-width: 600px) { 
+    .bannerCompleto .banner .texto p {
+        font-size: 14px;
+    }
+}
+
+.bannerCompleto .banner .texto .boton a{
+    text-decoration: none;
+    color: white;
+    background: #B6922E;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    width: 120px;
+    height: 32px;
+    line-height: 30px;
+    font-weight: 600;
+    border-radius: 50px;
+}
+
+.bannerCompleto .banner img{
+    width: 100%;
+}
+
+
+/* Negocios */
+.negocios{
+    background: white;
+    /* border: red 2px solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 95px;
+
+    /* padding: 50px 0px; */
+}
+
+.negocios h2{
+    font-size: 30px;
+    font-family:'Lato';
+    font-weight: 800;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #484848;
+}
+
+.negocios .mineria{
+    /* border: red 2px solid; */
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+@media(max-width:600px){
+    
+    .negocios h2{
+        font-size: 22px;
+    }
+}
+
+.negocios .mineria .mineria-caja{
+    width: 280px;
+    height: 330px;
+    background-color: white;
+    box-shadow: -1px 0px 6px 2px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.negocios .mineria .centro{
+    border: 2px solid #B6922E;
+}
+
+.negocios .mineria .mineria-caja .imagen{
+    width: 100%;
+    height: 50%;
+}
+
+.negocios .mineria .mineria-caja .imagen img{
+    /* border: red 2px solid; */
+    object-fit:scale-down;
+    width: 100%;
+    height: 100%;
+}
+
+.negocios .mineria .mineria-caja .mineria-texto{
+    /* border: red 2px solid; */
+    width: 77%;
+    height: 40%;
+}
+
+
+.negocios .mineria .mineria-caja .mineria-texto p{
+    color: #B6922E;
+    font-size: 20px;
+    font-weight: bolder;
+    font-style: normal;
+    margin-bottom: 5px;
+    /* border: red 2px solid; */
+    
+}
+
+.negocios .mineria .mineria-caja .mineria-texto h3{
+    color: #636260;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+@media(max-width:600px){
+    .negocios .mineria .mineria-caja .mineria-texto p{
+        font-size: 18px;
+        padding: 0px 9px;
+    }
+
+    .negocios .mineria .mineria-caja .mineria-texto h3{
+        font-size: 16px;
+    }
+}
+
+
+/* Nosotoros */
+.nosotros{
+    background: rgba(241, 241, 241, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    /* height: 550px; */
+    flex-wrap: wrap;
+    /* padding-left: 120px; */
+}
+
+.nosotros .nosotros-textos{
+    /* border: red 2px solid; */
+    margin-left: 120px;
+    width: 40%;
+    /* width: 500px; */
+}
+
+.nosotros .nosotros-textos h2{
+    font-size: 34px;
+    color: #484848;
+    font-family:'Lato';
+    font-weight: 800;
+    /* border: red 2px solid; */
+    margin-bottom: 15px;
+}
+
+.nosotros .nosotros-textos .raya{
+    width: 70px;
+    height: 10px;
+    background-color: #B6922E;
+    margin-bottom: 15px;
+}
+
+.nosotros .nosotros-textos p{
+    text-transform: capitalize;
+    font-size: 21px;
+    font-weight: bold;
+    color: #484848;
+    margin-bottom: 20px;
+}
+
+.nosotros .nosotros-textos .boton a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    padding: 5px 0px;
+    background: #B6922E;
+    border-radius: 50px;
+    font-size: 17px;
+    font-family: 'Lato';
+}
+
+.nosotros .imagen-barco{
+    /* border: red 2px solid; */
+    position: relative;
+    top:-50px;
+    
+    overflow: hidden;
+    /* transform: translateY(-10%);  */
+}
+
+.nosotros .imagen-barco img{
+    /* border: red 2px solid; */
+    /* height: 600px; */
+    /* width: 600px; */
+    
+    width: 110%;
+    /* object-fit: cover; */
+}
+
+@media(max-width:1200px){
+    .nosotros{
+        height: 1100px;
+        text-align: center;
+        justify-content: space-evenly;
+        /* padding: 30px 0px; */
+    }
+
+    .nosotros .nosotros-textos{
+        margin-left: 0px;
+        /* text-align: center; */
+        width: 500px;
+    }
+
+    .nosotros .nosotros-textos .raya{
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+    .nosotros .imagen-barco{
+        top:0;
+    }
+}
+
+@media(max-width:600px) /* and(min-width:900px) */{
+
+    .nosotros{
+        height: 700px;
+        text-align: center;
+        justify-content: center;
+        /* padding: 30px 0px; */
+    }
+
+
+    .nosotros .nosotros-textos{
+        margin-left: 0px;
+        /* text-align: center; */
+        width: 300px;
+    }
+    .nosotros .nosotros-textos h2{
+        font-size: 22px;
+    }
+
+    .nosotros .nosotros-textos .raya{
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+    .nosotros .nosotros-textos p{
+        font-size: 17px;
+    }
+
+    .nosotros .imagen-barco{
+        top:0;
+    }
+
+    .nosotros .imagen-barco img{
+        
+        width: 300px;
+        height: 300px;
+    } 
+}
+
+
+
+
+
+
+/* footer */
+footer{
+    /* height: 300px; */
+    padding-top: 45px;
+    background: #484848;
+}
+
+footer .footer-texto{
+    /* padding: 45px 5px; */
+    padding-bottom: 20px;
+    margin: auto;
+    width: 90%;
+    /* border: red 2px solid; */
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .footer-texto .footer-caja{
+    /* border: red 2px solid; */
+    width: 200px;
+    height: 150px;
+}
+
+footer .footer-texto .footer-caja h3{
+    color: white;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+footer .footer-texto .footer-caja .link a{
+    font-size: 17px;
+    display: block;
+    color: #A3A3A3;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+footer .footer-texto .footer-caja .link .color-link{
+    color: white;
+}
+
+
+
+
+footer .derechos{
+    width: 90%;
+    margin: auto;
+   
+    
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+footer .derechos .reservado p{
+    color: #A3A3A3;
+}
+
+@media(max-width:600px){
+
+    footer .footer-texto{
+        /* padding: 45px 5px; */
+        padding-bottom: 0px;
+        text-align: center;
+    }
+
+    footer .footer-texto .footer-caja{
+        align-items: center;
+    }
+}
